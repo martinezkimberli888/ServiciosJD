@@ -1,0 +1,10 @@
+{
+  "description": "Explore delicious offerings from Tamales Yaqui and Mariscos JD, order via WhatsApp, and plan special events with ease in a vibrant, user-friendly interface.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
