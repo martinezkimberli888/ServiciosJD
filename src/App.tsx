@@ -36,91 +36,279 @@ const fotos = {
   evento:
     "https://images.unsplash.com/photo-1746635732995-ab5c6118d5a7?auto=format&fit=crop&w=1600&q=85",
 };
+ // ==========================================
 
+
+  // TAMALES
+
+
+  // ==========================================
 const platillosTamales: Platillo[] = [
-  {
-    nombre: "Tamal de Elote",
-    descripcion: "Suave, dulcito y hecho para disfrutarse.",
-    categoria: "Tamales",
-    imagen: fotos.tamal,
-    ingredientes: ["Elote tierno", "Mantequilla", "Un toque de azúcar", "Hoja de maíz"],
-    marca: "tamales",
-  },
-  {
-    nombre: "Tamal de Cerdo",
-    descripcion: "Masa de maíz, cerdo y salsa de chile colorado.",
-    categoria: "Tamales",
-    imagen: fotos.cerdo,
-    ingredientes: ["Masa de maíz", "Cerdo", "Chile colorado", "Especias de la casa"],
-    marca: "tamales",
-  },
-  {
-    nombre: "Cerdo en Chile Colorado",
-    descripcion: "Cerdo, chile colorado, arroz y frijoles.",
-    categoria: "Comidas del día",
-    imagen: fotos.comida,
-    ingredientes: ["Cerdo", "Chile colorado", "Arroz", "Frijoles"],
-    marca: "tamales",
-  },
-  {
-    nombre: "Lonche de Pierna",
-    descripcion: "Pan, pierna de cerdo, lechuga, tomate y aguacate.",
-    categoria: "Lunchs",
-    imagen: fotos.lunch,
-    ingredientes: ["Pan crujiente", "Pierna de cerdo", "Lechuga", "Tomate", "Aguacate"],
-    marca: "tamales",
-  },
-];
+  // ==========================================
+  // CATEGORÍA 1: LUNCH
+  // ==========================================
 
-const platillosMariscos: Platillo[] = [
+  // --- Quesadillas ---
   {
-    nombre: "Tostada de camarón",
-    descripcion: "Ceviche, aguacate y limón.",
+    nombre: "Quesadillas (2 piezas)",
+    descripcion: "Acompañadas con verduras. Elige tu guiso o combinación preferida.",
+    categoria: "Lunch",
+    imagen: fotos.tamal,
+    ingredientes: [
+      "Natural", "Jamón", "Salchicha", "Chorizo", "Pierna", "Cochinita",
+      "Carne Molida", "Carne Asada", "Carne Molida c/ Chipotle",
+      "Chicharrón en Salsa Verde", "Mixtas (2 o 3 ingredientes)"
+    ],
+    marca: "tamales",
+  },
+
+  // --- Tacos ---
+  {
+    nombre: "Tacos (Maíz o Harina)",
+    descripcion: "Servidos en tortilla de maíz o harina con tu guisado favorito.",
+    categoria: "Lunch",
+    imagen: fotos.tamal,
+    ingredientes: [
+      "Pierna", "Cochinita", "Bistec", "Chicharrón en salsa verde",
+      "Carne Molida", "Carne Asada", "Mixtos"
+    ],
+    marca: "tamales",
+  },
+
+  // --- Burritos ---
+  {
+    nombre: "Burritos y Paquetes",
+    descripcion: "En tortilla de harina. Disponibles individuales o en paquete de 3.",
+    categoria: "Lunch",
+    imagen: fotos.tamal,
+    ingredientes: [
+      "Paquete (2 de guiso + 1 de frijol)",
+      "Sueltos: Pierna, Cochinita, Machaca, Bistec, Discada, Chorizo, Frijol c/ queso, etc."
+    ],
+    marca: "tamales",
+  },
+
+  // --- Tortas ---
+  {
+    nombre: "Tortas y Tortas Mixtas",
+    descripcion: "En pan crujiente con tu guiso favorito o combinaciones de hasta 3 ingredientes.",
+    categoria: "Lunch",
+    imagen: fotos.tamal,
+    ingredientes: [
+      "Pierna", "Cochinita", "Jamón", "Huevo", "Chorizo", "Cubana",
+      "Salchicha", "Chicharrón verde", "Carne Asada", "Pollo", "Mixtas (2 o 3 ingredientes)"
+    ],
+    marca: "tamales",
+  },
+
+  // --- Molletes ---
+  {
+    nombre: "Molletes Preparados",
+    descripcion: "Bolillo caliente con frijolitos, queso derretido y tu ingrediente preferido.",
+    categoria: "Lunch",
+    imagen: fotos.tamal,
+    ingredientes: [
+      "Natural", "Pierna", "Cochinita", "Jamón", "Salchicha", "Chorizo",
+      "Tocino", "Carne Asada", "Molle Pizza", "Carne Molida c/ Chipotle", "Mixtos"
+    ],
+    marca: "tamales",
+  },
+
+  // ==========================================
+  // CATEGORÍA 2: COMIDA PARA CUALQUIER HORA
+  // ==========================================
+
+  // --- Tamales ---
+  {
+    nombre: "Tamales Tradicionales",
+    descripcion: "Suaves, calientitos y hechos con la receta de la casa.",
+    categoria: "Comida para cualquier hora",
+    imagen: fotos.tamal,
+    ingredientes: [
+      "Carne", "Chicharrón en salsa verde", "Frijol Yurimuni",
+      "Elote Dulce", "Elote Salado", "Verdura"
+    ],
+    marca: "tamales",
+  },
+
+  // --- Enchiladas, Entomatadas y Chilaquiles ---
+  {
+    nombre: "Enchiladas y Entomatadas",
+    descripcion: "Bañadas en salsa tradicional con queso, crema y sazón de la casa.",
+    categoria: "Comida para cualquier hora",
+    imagen: fotos.tamal,
+    ingredientes: [
+      "Enchiladas tradicionales", "Entomatadas",
+      "Enchiladas de Chicharrón en Salsa Verde"
+    ],
+    marca: "tamales",
+  },
+  
+  {
+    nombre: "Chilaquiles",
+    descripcion: "Bañadas en salsa de su gusto con queso, crema y sazón de la casa.",
+    categoria: "Comida para cualquier hora",
+    imagen: fotos.tamal,
+    ingredientes: [
+      " Salsa Verde", "Salsa roja","divorciados", "agregue extras"
+    ],
+    marca: "tamales",
+  },
+  // --- Guisados Fuertes ---
+  {
+    nombre: "Guisados y Platillos Fuertes",
+    descripcion: "Servidos con sus guarniciones de arroz, frijoles o papas.",
+    categoria: "Comida para cualquier hora",
+    imagen: fotos.tamal,
+    ingredientes: [
+      "Bistec", "Carne Molida", "Pierna con chile y papas", "Platillos Mixtos"
+    ],
+    marca: "tamales",
+  },
+
+  // --- Hamburguesas ---
+  {
+    nombre: "Hamburguesas Especiales",
+    descripcion: "Preparadas con carne jugosa, queso y vegetales frescos.",
+    categoria: "Comida para cualquier hora",
+    imagen: fotos.tamal,
+    ingredientes: [
+      "Sencilla", "Tocino", "Especial", "Hawaiana", "Guacamole Ranchera",
+      "Hamburguesa de Lechuga (Carne, queso, cebolla y aguacate en hoja de lechuga)"
+    ],
+    marca: "tamales",
+  },
+
+  // ==========================================
+  // CATEGORÍA 3: BEBIDAS Y ATOLES
+  // ==========================================
+
+  // --- Atoles y Calientes ---
+  {
+    nombre: "Atoles y Bebidas Calientes",
+    descripcion: "El acompañamiento tradicional para tus desayunos o tamales.",
+    categoria: "Bebidas y Atoles",
+    imagen: fotos.tamal,
+    ingredientes: [
+      "Crema de Trigo", "Avena", "Champurrado", "Café de olla",
+      "Atole de Pinole", "Chocolate Abuelita"
+    ],
+    marca: "tamales",
+  },
+
+  // --- Refrescos y Fríos ---
+  {
+    nombre: "Bebidas Frías",
+    descripcion: "Refrescantes opciones para acompañar tu comida.",
+    categoria: "Bebidas y Atoles",
+    imagen: fotos.tamal,
+    ingredientes: [
+      "Aguas frescas del día", "Sodas de 600 ml", "Sodas de vidrio"
+    ],
+    marca: "tamales",
+  }
+];
+// ==========================================
+
+
+  // MARISCOS
+
+
+  // ==========================================
+const platillosMariscos: Platillo[] = [
+  // ==========================================
+  // CATEGORÍA 1: TOSTADAS Y TOSTILOCOS
+  // ==========================================
+  {
+    nombre: "Tostadas Individuales",
+    descripcion: "Crujiente tostada preparada al momento con mariscos frescos.",
     categoria: "Tostadas",
     imagen: fotos.camaron,
-    ingredientes: ["Camarón", "Pepino", "Cebolla morada", "Aguacate", "Tomate", "Cilantro y limón"],
+    ingredientes: [
+      "Tostada de Ceviche",
+      "Tostada de Camarón",
+      "Tostada de Ceviche con Camarón",
+      "Tostada de Pulpo",
+      "Tostada de Callo",
+      "Tostada de de Jaiba"
+    ],
     marca: "mariscos",
   },
   {
-    nombre: "Tostada de atún",
-    descripcion: "Atún fresco y ajonjolí.",
+    nombre: "Especialidades Tosti-Botanas",
+    descripcion: "Tostilocos preparados con mariscos, verdura, salsas negras y limonada.",
     categoria: "Tostadas",
-    imagen: fotos.atun,
-    ingredientes: ["Atún fresco", "Ajonjolí", "Aguacate", "Salsa de la casa"],
-    marca: "mariscos",
-  },
-  {
-    nombre: "Aguachile verde",
-    descripcion: "Camarón, pepino y chile.",
-    categoria: "Fresco",
     imagen: fotos.aguachile,
-    ingredientes: ["Camarón", "Pepino", "Chile verde", "Cebolla", "Limón"],
+    ingredientes: [
+      "Tosti Camarones",
+      "Tosti Ceviche",
+      "Tosti Mix (Combinado de mariscos)"
+    ],
+    marca: "mariscos",
+  },
+
+  // ==========================================
+  // CATEGORÍA 2: FRESCO Y COCTELES
+  // ==========================================
+  {
+    nombre: "Cocteles y Campechanas",
+    descripcion: "Servidos fríos con clamato y verdura picada ",
+    categoria: "Fresco",
+    imagen: fotos.coctel,
+    ingredientes: [
+      "Camarón Crudo o Cocido",
+      "Campechana (Mezcla de mariscos)"
+    ],
     marca: "mariscos",
   },
   {
-    nombre: "Ceviche de pescado",
-    descripcion: "Pescado, tomate y cilantro.",
+    nombre: "Especialidades del Día",
+    descripcion: "Mariscos frescos y botanas especiales.",
     categoria: "Fresco",
     imagen: fotos.ceviche,
-    ingredientes: ["Pescado", "Tomate", "Cilantro", "Cebolla", "Limón"],
+    ingredientes: [
+      "Manitas de Jaiba",
+      "Callo de Hacha"
+    ],
+    marca: "mariscos",
+  },
+
+  // ==========================================
+  // CATEGORÍA 3: ESPECIALIDADES POR LITRO Y MEDIO
+  // ==========================================
+  {
+    nombre: "Ceviche (1/2 ó 1 L)",
+    descripcion: "Ceviche fresco ideal para llevar o compartir.",
+    categoria: "Especialidades",
+    imagen: fotos.ceviche,
+    ingredientes: [
+      "Ceviche sencillo (1/2 ó 1 L)",
+      "Ceviche con Camarón (1/2 ó 1 L)"
+    ],
     marca: "mariscos",
   },
   {
-    nombre: "Cóctel de camarón",
-    descripcion: "La combinación de la casa.",
+    nombre: "Callitos y Camarón (1/2 ó 1 L)",
+    descripcion: "Porciones preparadas por litro y medio litro.",
     categoria: "Especialidades",
-    imagen: fotos.coctel,
-    ingredientes: ["Camarón", "Tomate", "Cebolla", "Aguacate", "Salsa de la casa"],
+    imagen: fotos.camaron,
+    ingredientes: [
+      "Callitos simples (1/2 ó 1 L)",
+      "Callitos con Camarón (1/2 ó 1 L)",
+      "Camarón preparado (1/2 ó 1 L)"
+    ],
     marca: "mariscos",
   },
   {
-    nombre: "Camarones al mojo",
-    descripcion: "Ajo dorado, arroz y ensalada.",
-    categoria: "Especialidades",
-    imagen: fotos.ajillo,
-    ingredientes: ["Camarón", "Ajo dorado", "Mantequilla", "Arroz", "Ensalada"],
+    nombre: "Bebidas",
+    descripcion: "Refrescantes opciones para acompañar tu comida.",
+    categoria: "Bebidas",
+    imagen: fotos.tamal,
+    ingredientes: [
+      "Aguas frescas del día", "Sodas de 600 ml", "Sodas de vidrio"
+    ],
     marca: "mariscos",
-  },
+  }
 ];
 
 function Icono({ nombre }: { nombre: "casa" | "flecha" | "whatsapp" | "mas" | "cerrar" | "marca" }) {
@@ -171,21 +359,28 @@ function Pie() {
         <div className="columnas-sociales">
           <div>
             <strong className="naranja">Tamales Yaqui</strong>
-            <a href="#" onClick={(evento) => evento.preventDefault()}>f&nbsp;&nbsp; Facebook</a>
-            <a href="#" onClick={(evento) => evento.preventDefault()}>◎&nbsp; Instagram</a>
+            <a href="#" onClick={(evento) => evento.preventDefault()}><img src="/imagenes/iconos/facebook_tamales.png" alt="Facebook" className="icono" />
+              Facebook
+            </a>
+            <a href="#" onClick={(evento) => evento.preventDefault()}><img src="/imagenes/iconos/instagram_tamales.png" alt="Instagram" className="icono" />
+              Instagram
+            </a>
             <small>Enlaces por confirmar</small>
           </div>
           <div>
             <strong className="azul">Mariscos JD</strong>
-            <a href="#" onClick={(evento) => evento.preventDefault()}>f&nbsp;&nbsp; Facebook</a>
-            <a href="#" onClick={(evento) => evento.preventDefault()}>◎&nbsp; Instagram</a>
+            <a href="#" onClick={(evento) => evento.preventDefault()}><img src="/imagenes/iconos/facebook_jd.png" alt="Facebook" className="icono" />
+               Facebook</a>
+            <a href="#" onClick={(evento) => evento.preventDefault()}><img src="/imagenes/iconos/instagram_jd.png" alt="Instagram" className="icono" />
+               Instagram
+            </a>
             <small>Enlaces por confirmar</small>
           </div>
         </div>
         <div className="datos-contacto">
-          <span>⌕ &nbsp; Teléfono por confirmar</span>
-          <span>⌖ &nbsp; Dirección por confirmar</span>
-          <span>◷ &nbsp; Horario por confirmar</span>
+          <span><img src="/imagenes/iconos/telefono.png" alt="telefonos" className="icono" /> Teléfono: 6441-00-00-00</span>
+          <span><img src="/imagenes/iconos/ubi.png" alt="Ubicacion" className="icono" /> Dirección: </span>
+          <span><img src="/imagenes/iconos/reloj.png" alt="horario" className="icono" /> Horario: </span>
         </div>
       </div>
     </footer>
@@ -217,7 +412,7 @@ function Inicio({ irA }: { irA: (vista: Vista) => void }) {
       <section className="hero-inicio contenedor">
         <p className="sobrelinea verde">BIENVENIDO A NUESTRA MESA</p>
         <h1>Dos cocinas.<br />Mucho sabor.</h1>
-        <p className="introduccion">Del antojo de todos los días a ese momento que merece celebrarse.</p>
+        <p className="introduccion">Y mucha variedad.</p>
         <div className="fila-pregunta"><strong>¿Qué se te antoja?</strong><small>MENÚ DIGITAL</small></div>
         <div className="rejilla-inicio">
           <TarjetaInicio vista="tamales" irA={irA} />
@@ -241,7 +436,7 @@ function Selector({ opciones, activa, alCambiar }: { opciones: string[]; activa:
 }
 
 function VistaTamales({ abrir }: { abrir: (platillo: Platillo) => void }) {
-  const [categoria, definirCategoria] = useState("Tamales");
+  const [categoria, definirCategoria] = useState("Comida para cualquier hora");
   const filtrados = platillosTamales.filter((platillo) => platillo.categoria === categoria);
   return (
     <main>
@@ -253,7 +448,7 @@ function VistaTamales({ abrir }: { abrir: (platillo: Platillo) => void }) {
         </div>
       </section>
       <div className="contenedor contenido-menu">
-        <Selector opciones={["Tamales", "Comidas del día", "Lunchs"]} activa={categoria} alCambiar={definirCategoria} />
+        <Selector opciones={["Comida para cualquier hora", "Bebidas y Atoles", "Lunch"]} activa={categoria} alCambiar={definirCategoria} />
         <div className="cabecera-menu">
           <div><h2>{categoria === "Tamales" ? "Nuestros tamales" : categoria}</h2><p>{categoria === "Tamales" ? "Suaves, calientitos y hechos con cariño." : "Para comer rico, sin complicarte."}</p></div>
           <span className="adorno">♧</span>
@@ -268,7 +463,7 @@ function VistaTamales({ abrir }: { abrir: (platillo: Platillo) => void }) {
             </article>
           ))}
         </div>
-        <div className="aviso">♧ <span>Pregunta por las comidas y los tamales disponibles hoy.</span></div>
+        <div className="aviso"> <span>Pregunta por las comidas y los tamales disponibles hoy.</span></div>
       </div>
       <Pie />
     </main>
@@ -362,7 +557,7 @@ function ModalDetalle({ platillo, cerrar }: { platillo: Platillo; cerrar: () => 
           <p className="sobrelinea">{platillo.marca === "tamales" ? "DE LA COCINA YAQUI" : `MARISCOS JD · ${platillo.categoria.toUpperCase()}`}</p>
           <h2>{platillo.nombre}</h2>
           <p className="descripcion-modal">{platillo.descripcion}</p>
-          <div className="ingredientes"><h3>¿Qué lleva?</h3><ul>{platillo.ingredientes.map((ingrediente) => <li key={ingrediente}>{ingrediente}</li>)}</ul></div>
+          <div className="ingredientes"><h3>¿Cual se te antoja?</h3><ul>{platillo.ingredientes.map((ingrediente) => <li key={ingrediente}>{ingrediente}</li>)}</ul></div>
           <BotonWhatsapp mensaje={`Hola, me gustaría pedir ${platillo.nombre}. ¿Está disponible hoy?`}>Pedir por WhatsApp</BotonWhatsapp>
           <small className="nota-modal">Consulta disponibilidad y cuéntanos cómo se te antoja.</small>
         </div>

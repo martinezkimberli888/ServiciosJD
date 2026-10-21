@@ -29,8 +29,11 @@ img { display: block; width: 100%; }
 .sin-desplazamiento { overflow: hidden; }
 .aplicacion { min-height: 100vh; background: var(--fondo); }
 .contenedor { width: min(100% - 2.5rem, 72rem); margin-inline: auto; }
-.icono { width: 1.5rem; height: 1.5rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+/*.icono { width: 1.5rem; height: 1.5rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }*/
+.icono { width: 1.25rem; height: 1.25rem; object-fit: contain; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
+/* Evita que las imágenes con clase .icono se estiren al 100% */
+img.icono { width: 1.25rem; height: 1.25rem; display: inline-block; vertical-align: middle; }
 .encabezado { height: calc(5.5rem + env(safe-area-inset-top)); padding-top: max(1.25rem, env(safe-area-inset-top)); display: flex; align-items: center; justify-content: space-between; background: var(--fondo); position: relative; z-index: 10; }
 .encabezado-inicio { padding-inline: max(1.5rem, calc((100vw - 72rem) / 2)); }
 .logo { border: 0; background: transparent; cursor: pointer; display: flex; flex-direction: column; line-height: 1; padding: .25rem; text-align: left; }
