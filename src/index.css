@@ -193,3 +193,41 @@ h1, h2, .titulo-pie { font-family: "Lora", serif; font-weight: 500; letter-spaci
   .imagen-modal { height: 14rem; }
   .contenido-modal { padding: 1.35rem; }
 }
+
+/* Botón contenedor en disposición horizontal */
+.logo,
+.titulo-marca {
+  display: flex;
+  flex-direction: row; /* Fuerza que vayan de lado a lado */
+  align-items: center; /* Alinea verticalmente al centro */
+  gap: 10px;           /* Espacio entre el logo y las letras */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+/* Bloque del texto apilado verticalmente */
+.texto-logo {
+  display: flex;
+  flex-direction: column; /* TAMALES arriba, Yaqui abajo */
+  align-items: flex-start;
+  text-align: left;
+  line-height: 1.1;
+}
+
+/* Tamaño de la imagen del logo */
+
+.icono-logo {
+  width: 60px;
+  height: 600px;
+  object-fit: contain;
+  display: block;
+}
+
+.icono-logo-seccion {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+}
