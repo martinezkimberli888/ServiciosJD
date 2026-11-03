@@ -69,7 +69,9 @@ h1, h2, .titulo-pie { font-family: "Lora", serif; font-weight: 500; letter-spaci
 .tarjeta-inicio.tamales { background: var(--naranja); }
 .tarjeta-inicio.mariscos { background: var(--azul); color: white; }
 .tarjeta-inicio.eventos { background: var(--pizarra); color: white; }
-.contenido-tarjeta { padding: 1.45rem; display: flex; flex-direction: column; position: relative; }
+.contenido-tarjeta { padding: 1.45rem; display: flex; flex-direction: column; position: relative; height: 100%;        /* Forzar a que ocupe todo el alto del lado izquierdo */
+  min-height: 12rem;   /* O un alto mínimo para que el margin-top: auto tenga espacio para empujar abajo */
+  box-sizing: border-box; }
 .contenido-tarjeta small { font-size: .62rem; }
 .contenido-tarjeta strong { font: 500 1.75rem/1.05 "Lora", serif; margin-top: .8rem; }
 .contenido-tarjeta > span { font-size: .75rem; margin-top: auto; max-width: 9rem; }
