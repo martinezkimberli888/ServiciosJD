@@ -14,7 +14,7 @@ type Platillo = {
 
 const fotos = {
   tamal:
-    "https://images.unsplash.com/photo-1732118070605-8c5faa62d284?auto=format&fit=crop&w=1200&q=85",
+    "/imagenes/MENUTAMALES/tamal.jpg",
   entomatadas:
     "/imagenes/MENUTAMALES/entomatadas.jpg",
   chilaquiles:
@@ -35,8 +35,8 @@ const fotos = {
     "/imagenes/MENUTAMALES/platillo.jpg",
   champurrado:
     "/imagenes/MENUTAMALES/champurrado.jpg",
-  bebidaFria:
-    "https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?auto=format&fit=crop&w=1200&q=85",
+  refresco:
+    "/imagenes/MENUTAMALES/refresco.jpg",
 
  // ==========================================
  // FOTOS MARISCOS
@@ -53,8 +53,10 @@ const fotos = {
     "/imagenes/MENUJD/callitos.jpg",
   tostitos:
     "/imagenes/MENUJD/tostitos.jpg",
+  aguas:
+    "/imagenes/MENUJD/aguas.png",
   logoYaqui:
-     "/imagenes/logoTamales.jpg",
+     "/imagenes/logos/logoTamales.jpg",
   logoMariscos:
      "/imagenes/logos/logoJD.jpg",
   evento:
@@ -148,7 +150,7 @@ const platillosTamales: Platillo[] = [
   {
     nombre: "Tamales Tradicionales",
     descripcion: "Suaves, calientitos y hechos con la receta de la casa.",
-    categoria: "Comida para cualquier hora",
+    categoria: "Comida",
     imagen: fotos.tamal,
     ingredientes: [
       "Carne", "Chicharrón en salsa verde", "Frijol Yurimuni",
@@ -161,7 +163,7 @@ const platillosTamales: Platillo[] = [
   {
     nombre: "Enchiladas y Entomatadas",
     descripcion: "Bañadas en salsa tradicional con queso, crema y sazón de la casa.",
-    categoria: "Comida para cualquier hora",
+    categoria: "Comida",
     imagen: fotos.entomatadas,
     ingredientes: [
       "Enchiladas tradicionales", "Entomatadas",
@@ -173,7 +175,7 @@ const platillosTamales: Platillo[] = [
   {
     nombre: "Chilaquiles",
     descripcion: "Bañadas en salsa de su gusto con queso, crema y sazón de la casa.",
-    categoria: "Comida para cualquier hora",
+    categoria: "Comida",
     imagen: fotos.chilaquiles,
     ingredientes: [
       " Salsa Verde", "Salsa roja","divorciados", "agregue extras"
@@ -184,7 +186,7 @@ const platillosTamales: Platillo[] = [
   {
     nombre: "Guisados y Platillos Fuertes",
     descripcion: "Servidos con sus guarniciones de arroz, frijoles o papas.",
-    categoria: "Comida para cualquier hora",
+    categoria: "Comida",
     imagen: fotos.platillo,
     ingredientes: [
       "Bistec", "Carne Molida", "Pierna con chile y papas", "Platillos Mixtos"
@@ -196,7 +198,7 @@ const platillosTamales: Platillo[] = [
   {
     nombre: "Hamburguesas Especiales",
     descripcion: "Preparadas con carne jugosa, queso y vegetales frescos.",
-    categoria: "Comida para cualquier hora",
+    categoria: "Comida",
     imagen: fotos.hamburguesa,
     ingredientes: [
       "Sencilla", "Tocino", "Especial", "Hawaiana", "Guacamole Ranchera",
@@ -227,7 +229,7 @@ const platillosTamales: Platillo[] = [
     nombre: "Bebidas Frías",
     descripcion: "Refrescantes opciones para acompañar tu comida.",
     categoria: "Bebidas y Atoles",
-    imagen: fotos.tamal,
+    imagen: fotos.refresco,
     ingredientes: [
       "Aguas frescas del día", "Sodas de 600 ml", "Sodas de vidrio"
     ],
@@ -321,12 +323,22 @@ const platillosMariscos: Platillo[] = [
     marca: "mariscos",
   },
   {
-    nombre: "Bebidas",
-    descripcion: "Refrescantes opciones para acompañar tu comida.",
+    nombre: "Refrescos",
+    descripcion: "Refrescos frios.",
     categoria: "Bebidas",
-    imagen: fotos.tamal,
+    imagen: fotos.refresco,
     ingredientes: [
-      "Aguas frescas del día", "Sodas de 600 ml", "Sodas de vidrio"
+       "Sodas de 600 ml", "Sodas de vidrio"
+    ],
+    marca: "mariscos",
+  },
+  {
+    nombre: "Aguas Frescas",
+    descripcion: "Aguas de sabor.",
+    categoria: "Bebidas",
+    imagen: fotos.aguas,
+    ingredientes: [
+      "jamaica","horchata","limonada",
     ],
     marca: "mariscos",
   }
@@ -404,19 +416,40 @@ function Pie() {
         <div className="columnas-sociales">
           <div>
             <strong className="naranja">Tamales Yaqui</strong>
-            <a href="https://www.facebook.com/tamales.yaquii" onClick={(evento) => evento.preventDefault()}><img src="/imagenes/iconos/facebook_tamales.png" alt="Facebook" className="icono" />
+            <a 
+              href="https://www.facebook.com/tamales.yaquii" 
+              target="_blank" 
+              rel="noreferrer"
+            >
+              <img src="/imagenes/iconos/facebook_tamales.png" alt="Facebook" className="icono" />
               Facebook
             </a>
-            <a href="#" onClick={(evento) => evento.preventDefault()}><img src="/imagenes/iconos/instagram_tamales.png" alt="Instagram" className="icono" />
+            <a 
+              href="https://www.instagram.com/tamales_yaquii/" 
+              target="_blank" 
+              rel="noreferrer"
+            >
+              <img src="/imagenes/iconos/instagram_tamales.png" alt="Instagram" className="icono" />
               Instagram
             </a>
           </div>
           <div>
             <strong className="azul">Mariscos JD</strong>
-            <a href="https://www.facebook.com/profile.php?id=61576985192729" onClick={(evento) => evento.preventDefault()}><img src="/imagenes/iconos/facebook_jd.png" alt="Facebook" className="icono" />
-               Facebook</a>
-            <a href="#" onClick={(evento) => evento.preventDefault()}><img src="/imagenes/iconos/instagram_jd.png" alt="Instagram" className="icono" />
-               Instagram
+            <a 
+              href="https://www.facebook.com/profile.php?id=61576985192729" 
+              target="_blank" 
+              rel="noreferrer"
+            >
+              <img src="/imagenes/iconos/facebook_jd.png" alt="Facebook" className="icono" />
+              Facebook
+            </a>
+            <a 
+              href="https://www.instagram.com/mariscos.jd/" 
+              target="_blank" 
+              rel="noreferrer"
+            >
+              <img src="/imagenes/iconos/instagram_jd.png" alt="Instagram" className="icono" />
+              Instagram
             </a>
           </div>
         </div>
@@ -424,7 +457,7 @@ function Pie() {
           <span><img src="/imagenes/iconos/telefono.png" alt="telefonos" className="icono" /> Teléfonos:</span>
           <span>Mariscos JD: 644-447-6573 o 644-211-2080</span>
           <span>Tamales Yaquii: 644-138-7024</span>
-          <span><img src="/imagenes/iconos/ubi.png" alt="Ubicacion" className="icono" /> Dirección:Otanchui #616 Sobre calle Yaqui </span>
+          <span><img src="/imagenes/iconos/ubi.png" alt="Ubicacion" className="icono" /> Dirección: Otanchui #616 Sobre calle Yaqui</span>
           <iframe
             src="https://www.google.com/maps/embed?pb=!3m2!1ses!2smx!4v1793681459772!5m2!1ses!2smx!6m8!1m7!1sppdlrheen8xtG4Fr48oI2g!2m2!1d27.50351975683017!2d-109.9566488094729!3f47.407660759102605!4f-18.022751707466227!5f0.9133001592935213"
             width="200"
@@ -535,7 +568,7 @@ function VistaTamales({ abrir }: { abrir: (platillo: Platillo) => void }) {
       </section>
       <div className="contenedor contenido-menu">
         <Selector
-          opciones={["Comida para cualquier hora", "Lunchs", "Bebidas y Atoles"]}
+          opciones={["Comida", "Lunchs", "Bebidas y Atoles"]}
           activa={categoria}
           alCambiar={definirCategoria}
         />
@@ -548,7 +581,6 @@ function VistaTamales({ abrir }: { abrir: (platillo: Platillo) => void }) {
                 : "Para comer rico, sin complicarte."}
             </p>
           </div>
-          <span className="adorno">♧</span>
         </div>
         <div className="rejilla-platillos">
           {filtrados.map((platillo) => (
@@ -594,29 +626,22 @@ function VistaMariscos({ abrir }: { abrir: (platillo: Platillo) => void }) {
           <div>
             <h2>{categoria}</h2>
             <p>
-              {categoria === "Bebidas"
-                ? "Algo fresco para acompañar."
-                : "Frescos, deliciosos y bien servidos."}
+             Frescos, deliciosos y bien servidos
             </p>
           </div>
         </div>
-        {categoria === "Bebidas" ? (
-          <div className="bebidas">
-            <article><span>▱</span><h3>Agua fresca</h3><p>Pregunta por el sabor del día.</p></article>
-            <article><span>▱</span><h3>Refresco</h3><p>Consulta las opciones disponibles.</p></article>
-          </div>
-        ) : (
-          <div className="rejilla-platillos">
-            {filtrados.map((platillo) => (
-              <TarjetaPlatillo
-                key={platillo.nombre}
-                platillo={platillo}
-                abrir={abrir}
-                estilo="mar"
-              />
-            ))}
-          </div>
-        )}
+
+        <div className="rejilla-platillos">
+          {filtrados.map((platillo) => (
+            <TarjetaPlatillo
+              key={platillo.nombre}
+              platillo={platillo}
+              abrir={abrir}
+              estilo="mar"
+            />
+          ))}
+        </div>
+
         <div className="aviso aviso-mar">
           ⓘ <span>Consulta la disponibilidad del día por WhatsApp.</span>
         </div>
@@ -630,15 +655,15 @@ function VistaMariscos({ abrir }: { abrir: (platillo: Platillo) => void }) {
 function VistaEventos() {
   return (
     <main>
-      <section className="evento-foto"><img src={fotos.evento} alt="Familia y amigos compartiendo una comida especial" /><span>✣ &nbsp; EL SABOR DE ESTAR JUNTOS</span></section>
+      <section className="evento-foto"><img src={fotos.evento} alt="Familia y amigos compartiendo una comida especial" /></section>
       <section className="evento-presentacion">
-        <div className="contenedor"><p className="sobrelinea naranja">TAMALES YAQUI + MARISCOS JD</p><h1>¡Atendemos tus eventos especiales, escolares y convivios!</h1><p>¿Necesitas comida para un evento? ¡Cotiza con nosotros!</p></div>
+        <div className="contenedor"><p className="sobrelinea naranja">TAMALES YAQUI + MARISCOS JD</p><h1>¡Atendemos tus eventos especiales,convivios,          servicios que necesites !</h1><p>¿Necesitas comida para un evento? ¡Cotiza con nosotros!</p></div>
       </section>
       <section className="contenedor evento-contenido">
         <h2>Tú reúnes.<br />Nosotros ponemos el sabor.</h2>
         <p>Tamales, comidas y mariscos para compartir en tus mejores momentos.</p>
         <div className="categorias-evento">
-          <span>✣<strong>Especiales</strong></span><span>⌂<strong>Escolares</strong></span><span>♧<strong>Convivios</strong></span>
+          <span>✨🎄<strong>Especiales</strong></span><span>🧑‍🎓<strong>Escolares</strong></span><span>🥳<strong>Convivios</strong></span>
         </div>
         <div className="lista-planeacion">
           <h3>Cuéntanos qué estás planeando</h3>
@@ -654,8 +679,28 @@ function VistaEventos() {
   );
 }
 
-function BotonWhatsapp({ mensaje, children }: { mensaje: string; children: React.ReactNode }) {
-  return <a className="boton-whatsapp" href={`https://wa.me/?text=${encodeURIComponent(mensaje)}`} target="_blank" rel="noreferrer"><Icono nombre="whatsapp" />{children}</a>;
+
+function BotonWhatsapp({
+  numero,
+  mensaje,
+  children,
+}: {
+  numero?: string;
+  mensaje: string;
+  children: React.ReactNode;
+}) {
+  const destino = numero ? `https://wa.me/${numero}` : "https://wa.me";
+  return (
+    <a
+      className="boton-whatsapp"
+      href={`${destino}?text=${encodeURIComponent(mensaje)}`}
+      target="_blank"
+      rel="noreferrer"
+    >
+      <Icono nombre="whatsapp" />
+      {children}
+    </a>
+  );
 }
 
 function ModalDetalle({ platillo, cerrar }: { platillo: Platillo; cerrar: () => void }) {
@@ -665,6 +710,9 @@ function ModalDetalle({ platillo, cerrar }: { platillo: Platillo; cerrar: () => 
     document.body.classList.add("sin-desplazamiento");
     return () => { document.removeEventListener("keydown", manejarTecla); document.body.classList.remove("sin-desplazamiento"); };
   }, [cerrar]);
+
+  // Selección de teléfono según la marca del platillo
+  const numeroTelefono = platillo.marca === "tamales" ? "526441387024" : "526444476573";
   return (
     <div className="fondo-modal" role="presentation" onMouseDown={(evento) => evento.target === evento.currentTarget && cerrar()}>
       <section className={`modal ${platillo.marca}`} role="dialog" aria-modal="true" aria-label={`Detalle de ${platillo.nombre}`}>
@@ -675,8 +723,12 @@ function ModalDetalle({ platillo, cerrar }: { platillo: Platillo; cerrar: () => 
           <h2>{platillo.nombre}</h2>
           <p className="descripcion-modal">{platillo.descripcion}</p>
           <div className="ingredientes"><h3>¿Cual se te antoja?</h3><ul>{platillo.ingredientes.map((ingrediente) => <li key={ingrediente}>{ingrediente}</li>)}</ul></div>
-          <BotonWhatsapp mensaje={`Hola, me gustaría pedir ${platillo.nombre}. ¿Está disponible hoy?`}>Pedir por WhatsApp</BotonWhatsapp>
-          <small className="nota-modal">Consulta disponibilidad y cuéntanos cómo se te antoja.</small>
+          <BotonWhatsapp 
+            numero={numeroTelefono} 
+            mensaje={`Hola, me gustaría pedir ${platillo.nombre}. ¿Está disponible hoy?`}
+          >
+            Pedir por WhatsApp
+          </BotonWhatsapp>
         </div>
       </section>
     </div>
@@ -686,7 +738,32 @@ function ModalDetalle({ platillo, cerrar }: { platillo: Platillo; cerrar: () => 
 export default function App() {
   const [vista, definirVista] = useState<Vista>("inicio");
   const [detalle, definirDetalle] = useState<Platillo | null>(null);
-  const irA = (nuevaVista: Vista) => { definirVista(nuevaVista); window.scrollTo({ top: 0, behavior: "smooth" }); };
+
+  const irA = (nuevaVista: Vista) => {
+    definirVista(nuevaVista);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // Configuración del botón de WhatsApp según la vista actual
+  const configWhatsapp = {
+    tamales: {
+      numero: "526441387024",
+      mensaje: "Hola, me gustaría hacer un pedido de Tamales Yaqui.",
+    },
+    mariscos: {
+      numero: "526444476573",
+      mensaje: "Hola, me gustaría hacer un pedido de Mariscos JD.",
+    },
+    eventos: {
+      numero: "526444476573", // O el número preferido para eventos
+      mensaje: "Hola, me gustaría cotizar un evento especial.",
+    },
+    inicio: {
+      numero: "526444476573",
+      mensaje: "Hola, me gustaría solicitar información sobre el menú.",
+    },
+  }[vista];
+
   return (
     <div className={`aplicacion vista-${vista}`}>
       <Encabezado vista={vista} irA={irA} />
@@ -694,7 +771,18 @@ export default function App() {
       {vista === "tamales" && <VistaTamales abrir={definirDetalle} />}
       {vista === "mariscos" && <VistaMariscos abrir={definirDetalle} />}
       {vista === "eventos" && <VistaEventos />}
-      <a className="fab" href="https://wa.me/?text=Hola%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp"><Icono nombre="whatsapp" /></a>
+
+      {/* Botón flotante con el número y mensaje de la sección activa */}
+      <a
+        className="fab"
+        href={`https://wa.me/${configWhatsapp.numero}?text=${encodeURIComponent(configWhatsapp.mensaje)}`}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Contactar por WhatsApp"
+      >
+        <Icono nombre="whatsapp" />
+      </a>
+
       {detalle && <ModalDetalle platillo={detalle} cerrar={() => definirDetalle(null)} />}
     </div>
   );
