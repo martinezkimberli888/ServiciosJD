@@ -141,7 +141,7 @@ h1, h2, .titulo-pie { font-family: "Lora", serif; font-weight: 500; letter-spaci
 .datos-contacto { border-top: 1px solid var(--linea); margin-top: 2.5rem; padding-top: 1.5rem; display: flex; flex-direction: column; gap: .65rem; color: var(--suave); font-size: .8rem; }
 
 .boton-whatsapp { height: 3.6rem; border-radius: 1rem; background: var(--whatsapp); color: #092d18; display: flex; align-items: center; justify-content: center; gap: .75rem; text-decoration: none; font-weight: 500; }
-.fab { position: fixed; z-index: 30; right: max(1.25rem, calc((100vw - 78rem) / 2)); bottom: max(1.25rem, env(safe-area-inset-bottom)); width: 3.8rem; height: 3.8rem; border-radius: 50%; display: grid; place-items: center; background: var(--whatsapp); color: #082b18; border: .2rem solid white; box-shadow: 0 .6rem 1.6rem rgb(0 0 0 / 18%); }
+.fab { position: fixed; z-index: 9999; right: max(1.25rem, calc((100vw - 78rem) / 2)); bottom: max(5rem, env(safe-area-inset-bottom)); width: 3.8rem; height: 3.8rem; border-radius: 50%; display: grid; place-items: center; background: var(--whatsapp); color: #082b18; border: .2rem solid white; box-shadow: 0 .6rem 1.6rem rgb(0 0 0 / 18%); }
 .fab .icono { width: 2rem; height: 2rem; stroke-width: 2; }
 .fondo-modal { position: fixed; z-index: 50; inset: 0; background: rgb(23 31 33 / 58%); backdrop-filter: blur(3px); display: grid; place-items: center; padding: 1rem; overflow-y: auto; }
 .modal { width: min(100%, 43rem); max-height: calc(100vh - 2rem); overflow-y: auto; background: var(--fondo); border-radius: 1.6rem; position: relative; box-shadow: var(--sombra); animation: aparecer .25s ease-out; }

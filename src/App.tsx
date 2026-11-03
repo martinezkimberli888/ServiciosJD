@@ -485,7 +485,7 @@ function TarjetaInicio({ vista, irA }: { vista: Exclude<Vista, "inicio">; irA: (
         <small>{datos.etiqueta}</small>
         <strong>{datos.titulo}</strong>
         <span>{datos.nota}</span>
-        <b aria-hidden="true">↗</b>
+        <b aria-hidden="true">→</b>
       </span>
       <img src={datos.imagen} alt="" />
     </button>
@@ -554,7 +554,7 @@ function TarjetaPlatillo({
 
 // VistaTamales estandarizada
 function VistaTamales({ abrir }: { abrir: (platillo: Platillo) => void }) {
-  const [categoria, definirCategoria] = useState("Comida para cualquier hora");
+  const [categoria, definirCategoria] = useState("Comida");
   const filtrados = platillosTamales.filter((platillo) => platillo.categoria === categoria);
 
   return (
