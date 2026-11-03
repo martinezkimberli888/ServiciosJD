@@ -484,8 +484,9 @@ function TarjetaInicio({ vista, irA }: { vista: Exclude<Vista, "inicio">; irA: (
       <span className="contenido-tarjeta">
         <small>{datos.etiqueta}</small>
         <strong>{datos.titulo}</strong>
-        <span>{datos.nota}</span>
+        <span>{datos.nota}
         <b aria-hidden="true">→</b>
+        </span>
       </span>
       <img src={datos.imagen} alt="" />
     </button>
