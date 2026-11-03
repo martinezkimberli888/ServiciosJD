@@ -14,51 +14,51 @@ type Platillo = {
 
 const fotos = {
   tamal:
-    "public/imagenes/MENUTAMALES/tamal.jpg",
+    "/imagenes/MENUTAMALES/tamal.jpg",
   entomatadas:
-    "public/imagenes/MENUTAMALES/entomatadas.jpg",
+    "/imagenes/MENUTAMALES/entomatadas.jpg",
   chilaquiles:
-    "public/imagenes/MENUTAMALES/chilaquiles.jpg",
+    "/imagenes/MENUTAMALES/chilaquiles.jpg",
   hamburguesa:
-    "public/imagenes/MENUTAMALES/hamburguesa.jpg",
+    "/imagenes/MENUTAMALES/hamburguesa.jpg",
   quesadillas:
-    "public/imagenes/MENUTAMALES/quesadilla.jpg",
+    "/imagenes/MENUTAMALES/quesadilla.jpg",
   tacos:
-    "public/imagenes/MENUTAMALES/tacos.jpg",
+    "/imagenes/MENUTAMALES/tacos.jpg",
   torta:
-    "public/imagenes/MENUTAMALES/torta.jpg",
+    "/imagenes/MENUTAMALES/torta.jpg",
   molletes:
-    "public/imagenes/MENUTAMALES/mollete.jpg",
+    "/imagenes/MENUTAMALES/mollete.jpg",
   burrito:
-    "public/imagenes/MENUTAMALES/burritos.jpg",
+    "/imagenes/MENUTAMALES/burritos.jpg",
   platillo:
-    "public/imagenes/MENUTAMALES/platillo.jpg",
+    "/imagenes/MENUTAMALES/platillo.jpg",
   champurrado:
-    "public/imagenes/MENUTAMALES/champurrado.jpg",
+    "/imagenes/MENUTAMALES/champurrado.jpg",
   refresco:
-    "public/imagenes/MENUTAMALES/refresco.jpg",
+    "/imagenes/MENUTAMALES/refresco.jpg",
 
  // ==========================================
  // FOTOS MARISCOS
  // ==========================================
   tostadas:
-    "public/imagenes/MENUJD/tostadas.jpg",
+    "/imagenes/MENUJD/tostadas.jpg",
   cocteles:
-    "public/imagenes/MENUJD/campechanas.jpg",
+    "/imagenes/MENUJD/campechanas.jpg",
   jaiba:
-    "public/imagenes/MENUJD/jaiba.jpg",
+    "/imagenes/MENUJD/jaiba.jpg",
   ceviche:
-    "public/imagenes/MENUJD/ceviche.jpg",
+    "/imagenes/MENUJD/ceviche.jpg",
   callitos:
-    "public/imagenes/MENUJD/callitos.jpg",
+    "/imagenes/MENUJD/callitos.jpg",
   tostitos:
-    "public/imagenes/MENUJD/tostitos.jpg",
+    "/imagenes/MENUJD/tostitos.jpg",
   aguas:
-    "public/imagenes/MENUJD/aguas.png",
+    "/imagenes/MENUJD/aguas.png",
   logoYaqui:
-     "public/imagenes/logos/logoTamales.jpg",
+     "/imagenes/logos/logoTamales.jpg",
   logoMariscos:
-     "public/imagenes/logos/logoJD.jpg",
+     "/imagenes/logos/logoJD.jpg",
   evento:
     "https://images.unsplash.com/photo-1746635732995-ab5c6118d5a7?auto=format&fit=crop&w=1600&q=85",
 
@@ -421,7 +421,7 @@ function Pie() {
               target="_blank" 
               rel="noreferrer"
             >
-              <img src="public/imagenes/iconos/facebook_tamales.png" alt="Facebook" className="icono" />
+              <img src="/imagenes/iconos/facebook_tamales.png" alt="Facebook" className="icono" />
               Facebook
             </a>
             <a 
@@ -429,7 +429,7 @@ function Pie() {
               target="_blank" 
               rel="noreferrer"
             >
-              <img src="public/imagenes/iconos/instagram_tamales.png" alt="Instagram" className="icono" />
+              <img src="/imagenes/iconos/instagram_tamales.png" alt="Instagram" className="icono" />
               Instagram
             </a>
           </div>
@@ -440,7 +440,7 @@ function Pie() {
               target="_blank" 
               rel="noreferrer"
             >
-              <img src="public/imagenes/iconos/facebook_jd.png" alt="Facebook" className="icono" />
+              <img src="/imagenes/iconos/facebook_jd.png" alt="Facebook" className="icono" />
               Facebook
             </a>
             <a 
@@ -448,16 +448,16 @@ function Pie() {
               target="_blank" 
               rel="noreferrer"
             >
-              <img src="public/imagenes/iconos/instagram_jd.png" alt="Instagram" className="icono" />
+              <img src="/imagenes/iconos/instagram_jd.png" alt="Instagram" className="icono" />
               Instagram
             </a>
           </div>
         </div>
         <div className="datos-contacto">
-          <span><img src="public/imagenes/iconos/telefono.png" alt="telefonos" className="icono" /> Teléfonos:</span>
+          <span><img src="/imagenes/iconos/telefono.png" alt="telefonos" className="icono" /> Teléfonos:</span>
           <span>Mariscos JD: 644-447-6573 o 644-211-2080</span>
           <span>Tamales Yaquii: 644-138-7024</span>
-          <span><img src="public/imagenes/iconos/ubi.png" alt="Ubicacion" className="icono" /> Dirección: Otanchui #616 Sobre calle Yaqui</span>
+          <span><img src="/imagenes/iconos/ubi.png" alt="Ubicacion" className="icono" /> Dirección: Otanchui #616 Sobre calle Yaqui</span>
           <iframe
             src="https://www.google.com/maps/embed?pb=!3m2!1ses!2smx!4v1793681459772!5m2!1ses!2smx!6m8!1m7!1sppdlrheen8xtG4Fr48oI2g!2m2!1d27.50351975683017!2d-109.9566488094729!3f47.407660759102605!4f-18.022751707466227!5f0.9133001592935213"
             width="200"
